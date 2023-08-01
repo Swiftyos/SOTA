@@ -1,10 +1,15 @@
+# sourcery skip: avoid-global-variables
 import sys
 
 from dotenv import load_dotenv
 
+import sota.agent
+
 
 def run(task: str) -> None:
+    """Runs the agent for benchmarking"""
     load_dotenv()
+    sota.agent.run(task)
 
 
 if __name__ == "__main__":
