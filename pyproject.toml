@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sota"
+version = "0.1.0"
+description = "A State of the art agent incorprating the latest advancements from the research community"
+authors = ["SwiftyOS <craigswift13@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.3"
+pydantic = "^1.10.9"
+tenacity = "^8.2.2"
+openai = "^0.27.8"
+python-dotenv = "^0.21.0"
+
+[tool.poetry.group.dev.dependencies]
+agbenchmark = "^0.0.2"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+isort = "^5.12.0"
+black = "^23.3.0"
+pre-commit = "^3.3.3"
+mypy = "^1.4.1"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
